@@ -49,7 +49,7 @@ mod player {
                 Some((first_choice, first_choice))
             } else {
                 let new_choice = (first_choice + 1).rem_euclid(x);
-                Some((new_choice, new_choice))
+                Some((new_choice, first_choice))
             }
         }
     }
