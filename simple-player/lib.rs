@@ -5,6 +5,7 @@ pub use player::{Player as TestPlayer, PlayerRef as TestPlayerRef};
 #[ink::contract]
 mod player {
     use common::*;
+    use squink_splash::GameRef;
 
     #[ink(storage)]
     pub struct Player {
@@ -43,11 +44,12 @@ mod player {
 
             let first_choice = turn.rem_euclid(x);
 
-            let game: ink::contract_ref!(IGame) = self.game_contract.into();
+            let game: GameRef = ink::env::call::FromAccountId::from_account_id(self.game_contract);
             if game.field(Field { x: first_choice, y: first_choice }).is_none() {
                 Some((first_choice, first_choice))
             } else {
-                Some((first_choice, (first_choice + 1).rem_euclid(x)))
+                let new_choice = (first_choice + 1).rem_euclid(x);
+                Some((new_choice, new_choice))
             }
         }
     }

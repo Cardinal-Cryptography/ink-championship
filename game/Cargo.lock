@@ -3923,6 +3923,7 @@ dependencies = [
  "ink",
  "parity-scale-codec",
  "scale-info",
+ "squink_splash",
 ]
 
 [[package]]

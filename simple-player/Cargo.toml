@@ -9,6 +9,7 @@ ink = { version = "4.3.0", default-features = false }
 scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
 scale-info = { version = "2", default-features = false, features = ["derive"], optional = true }
 
+squink_splash = { path = "../game", default-features = false, features = ["ink-as-dependency"] }
 common = { path = "../common", default-features = false }
 
 [lib]
@@ -21,5 +22,6 @@ std = [
     "scale/std",
     "scale-info/std",
     "common/std",
+    "squink_splash/std",
 ]
 ink-as-dependency = []

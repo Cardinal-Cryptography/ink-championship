@@ -817,6 +817,7 @@ dependencies = [
  "ink",
  "parity-scale-codec",
  "scale-info",
+ "squink_splash",
 ]
 
 [[package]]
@@ -824,6 +825,16 @@ name = "smallvec"
 version = "1.13.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3c5e1a9a646d36c3599cd173a41282daf47c44583ad367b8e6837255952e5c67"
+
+[[package]]
+name = "squink_splash"
+version = "0.1.0"
+dependencies = [
+ "common",
+ "ink",
+ "parity-scale-codec",
+ "scale-info",
+]
 
 [[package]]
 name = "static_assertions"

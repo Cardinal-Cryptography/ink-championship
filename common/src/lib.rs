@@ -2,12 +2,10 @@
 
 mod error;
 mod structs;
-mod interface;
 
 use core::ops::RangeInclusive;
 pub use error::*;
 pub use structs::*;
-pub use interface::*;
 
 /// The amount of players that are allowed to register for a single game.
 pub const PLAYER_LIMIT: usize = 80;
