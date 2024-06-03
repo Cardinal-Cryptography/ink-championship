@@ -3919,6 +3919,7 @@ checksum = "74233d3b3b2f6d4b006dc19dee745e73e2a6bfb6f93607cd3b02bd5b00797d7c"
 name = "simple-player"
 version = "0.1.0"
 dependencies = [
+ "common",
  "ink",
  "parity-scale-codec",
  "scale-info",

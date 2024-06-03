@@ -3,7 +3,7 @@ use ink::prelude::vec::Vec;
 use crate::{ Field, FieldEntry, Player, State};
 
 #[ink::trait_definition]
-pub trait PSP22 {
+pub trait IGame {
     /// The buy-in amount to register a player.
     #[ink(message)]
     fn buy_in_amount(&self) -> <DefaultEnvironment as Environment>::Balance;
