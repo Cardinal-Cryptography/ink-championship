@@ -1,10 +1,13 @@
 # Ignore build artifacts from the local tests sub-crate.
 /target/
 /stresstest/target/
+/common/target/
 /core/target/
 /model/target/
 /lang/target/
 /intelligent-player/target/
+/simple-player/target/
+/simplest-player/target/
 /primitives/target/
 /examples/**/target/
 /design/
